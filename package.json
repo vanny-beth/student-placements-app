@@ -1,0 +1,17 @@
+{
+  "name": "student-placement-app",
+  "version": "1.0.0",
+  "description": "Web application for students to register and apply for placements in East Africa.",
+  "main": "index.js",
+  "scripts": {
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "server": "cd backend && npm run dev",
+    "client": "cd frontend && npm start"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^9.2.1"
+  }
+}
