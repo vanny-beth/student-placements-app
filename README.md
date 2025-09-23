@@ -1,4 +1,4 @@
-# 🌍 Student Placements App
+# 🌍 Electives Worldwide
 
 A full-stack web application that connects students from around the world with placement opportunities in East Africa.
 
