@@ -16,7 +16,7 @@ This project is part of my Full Stack Developer journey and will be showcased as
 
 ## 🛠 Tech Stack
 - **Frontend**: React.js  
-- **Backend**: Node.js, Express.js  
+- **Backend**: Django  
 - **Database**: PostgreSQL (relational DB for structured placement data)  
 - **Authentication**: JWT-based login/register system  
 - **Dev Environment**: GitHub Codespaces / Docker-ready  
