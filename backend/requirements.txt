@@ -1,0 +1,44 @@
+# -------------------------------
+# Core Django + dependencies
+# -------------------------------
+
+asgiref==3.9.1
+# ASGI (Asynchronous Server Gateway Interface) library used by Django for async features.
+
+Django==5.2.6
+# Main Django web framework.
+
+sqlparse==0.5.3
+# SQL parser library used internally by Django.
+
+# -------------------------------
+# Database
+# -------------------------------
+
+psycopg2-binary==2.9.10
+# PostgreSQL database driver for Python/Django.
+
+# -------------------------------
+# REST API
+# -------------------------------
+
+djangorestframework==3.16.1
+# Django REST Framework for building RESTful APIs.
+
+# -------------------------------
+# Environment variables
+# -------------------------------
+
+python-dotenv==1.1.1
+# Loads environment variables from a .env file.
+
+# -------------------------------
+# Extra packages
+# -------------------------------
+
+django-cors-headers==4.4.0
+# Middleware to handle CORS (Cross-Origin Resource Sharing),
+# allowing the React frontend to call Django backend APIs.
+
+djangorestframework-simplejwt==5.3.1
+# JSON Web Token authentication support for DRF.
