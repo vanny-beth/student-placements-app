@@ -57,6 +57,23 @@ INSTALLED_APPS = [
     "users",
 ]
 
+REST_FRAMEWORK = {
+    "DEFAULT_AUTHENTICATION_CLASSES": (
+        "rest_framework_simplejwt.authentication.JWTAuthentication",
+    ),
+    "DEFAULT_PERMISSION_CLASSES": (
+        "rest_framework.permissions.AllowAny",
+    ),
+}
+
+# SimpleJWT configuration (token lifetimes)
+from datetime import timedelta
+
+SIMPLE_JWT = {
+    "ACCESS_TOKEN_LIFETIME": timedelta(minutes=30),   # Access token valid for 30 minutes
+    "REFRESH_TOKEN_LIFETIME": timedelta(days=1),      # Refresh token valid for 1 day
+}
+
 AUTH_USER_MODEL = "users.User"
 
 MIDDLEWARE = [
