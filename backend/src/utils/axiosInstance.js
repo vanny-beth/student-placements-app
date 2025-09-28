@@ -3,7 +3,7 @@ import { getAccessToken, getRefreshToken, setTokens, clearTokens } from "./token
 
 // Create instance with base config
 const axiosInstance = axios.create({
-  baseURL: import.meta.env.VITE_API_BASE_URL || "http://localhost:8000/api", 
+  baseURL: import.meta.env.VITE_API_BASE_URL || "https://verbose-parakeet-969p69vqq4g2r47.github.dev/api", 
   headers: {
     "Content-Type": "application/json",
   },
@@ -41,7 +41,7 @@ axiosInstance.interceptors.response.use(
 
         // Get new tokens
         const res = await axios.post(
-          `${import.meta.env.VITE_API_BASE_URL || "http://localhost:8000/api"}/token/refresh/`,
+          `${import.meta.env.VITE_API_BASE_URL || "https://verbose-parakeet-969p69vqq4g2r47.github.dev/api"}/token/refresh/`,
           { refresh }
         );
 
