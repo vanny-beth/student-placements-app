@@ -1,7 +1,7 @@
 // src/pages/Login.jsx
 import { useState } from "react";
-import axiosInstance from "../utils/axiosInstance";
-import { setTokens, setUser } from "../utils/tokenStorage";
+import axiosInstance from "../../../backend/src/utils/axiosInstance";
+import { setTokens, setUser } from "../../../backend/src/utils/tokenStorage";
 import { useNavigate } from "react-router-dom";
 
 const Login = () => {
